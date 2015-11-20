@@ -26,7 +26,15 @@ let Final = {
 let riverCrossingPlan () : Positions list =
     [
         Start
-        // do something here!
+        { Fox = LeftBank; Corn = LeftBank; Goose = Boat; You = Boat }
+        { Fox = LeftBank; Corn = LeftBank; Goose = RightBank; You = Boat; }
+        { Fox = LeftBank; Corn = Boat; Goose = RightBank; You = Boat; }
+        { Fox = LeftBank; Corn = RightBank; Goose = RightBank; You = RightBank; }
+        { Fox = LeftBank; Corn = RightBank; Goose = Boat; You = Boat; }
+        { Fox = LeftBank; Corn = RightBank; Goose = LeftBank; You = LeftBank; }
+        { Fox = Boat; Corn = RightBank; Goose = LeftBank; You = Boat; }
+        { Fox = RightBank; Corn = RightBank; Goose = LeftBank; You = Boat; }
+        { Fox = RightBank; Corn = RightBank; Goose = Boat; You = Boat; }
         Final
     ]
 
